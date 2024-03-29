@@ -4,4 +4,6 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        CompararMatrices.cpp \
+        CrearEstructura.cpp \
         main.cpp
