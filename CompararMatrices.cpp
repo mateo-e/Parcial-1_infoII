@@ -6,6 +6,9 @@
 
 bool comparar(short int ** A, short int ** B, short int A_tam, short int B_tam, short int f_A, short int c_A, short int norma)
 {
+    if(A[f_A][c_A] == 0) // en caso de que la coordenada sea justamente el centro
+        return false;
+
     short int dif_tam = 0, f_B, c_B; //indica cuantos saltos en tamaño (numeros impares de diferencia hay entre la matriz)
 
     if(A_tam != B_tam)

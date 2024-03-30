@@ -44,3 +44,10 @@ void mostrarMatriz(short int ** matriz,short int tam)
         cout << endl;
     }
 }
+
+void borrar_matriz(short int** matriz, short int filas) {
+    for (int i = 0; i < filas; ++i) {
+        delete[] matriz[i]; // Borra cada fila de la matriz
+    }
+    delete[] matriz; // Borra el arreglo de punteros que apuntan a las filas
+}
