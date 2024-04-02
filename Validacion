@@ -1,0 +1,48 @@
+#include <iostream>
+
+bool valPosicion(int posicion);
+bool valNorma(int norma);
+
+int main()
+{
+    int posicion_x , posicion_y; bool cond = true;
+    
+    do{
+        std::cout << "Ingrese el valor de la fila: " << std:: endl;
+        std::cin >> posicion_x;
+        std::cout <<"Ingrese el valor de la columna: "<< std::endl;
+        std::cin >> posicion_y;
+        
+        if(!valPosicion(posicion_x)){
+            std::cout << "El valor de la fila no puede ser negativo o cero"<<std::endl;
+            
+        }
+        else{
+            if(!valPosicion(posicion_y)){
+                std::cout<< "El valor de la columna no puede ser negativo o cero"<<std::endl;
+            }
+            else{
+                cond = false;
+            }
+        }
+        
+    }while(cond);
+    
+
+    return 0;
+    
+    
+}
+
+bool valPosicion(int posicion){
+    if(posicion < 1 )
+        return false;
+    
+    return true;
+}
+bool valNorma(int norma){
+    if(norma == 1 || norma == -1 || norma == 0)
+        return false;
+        
+    return true;
+}
