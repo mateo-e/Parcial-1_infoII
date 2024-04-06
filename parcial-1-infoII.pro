@@ -6,4 +6,6 @@ CONFIG -= qt
 SOURCES += \
         CompararMatrices.cpp \
         CrearEstructura.cpp \
+        RotarEstructura.cpp \
+        buscarCerradura.cpp \
         main.cpp
