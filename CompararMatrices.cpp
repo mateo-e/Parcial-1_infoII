@@ -23,36 +23,20 @@ bool comparar(short int ** A, short int ** B, short int A_tam, short int B_tam, 
 
     // en caso que la posicion en B no exista:
 
-
-
-    if ( f_B < 0 || c_B < 0) // en caso de que las coordenadas en la nueva matriz se salgan del rango
+    if ( f_B < 0 || c_B < 0)
     {
         B = NULL;
         return false;
     }
 
-
-    cout<<endl<<norma<<endl<<"A: "<<A[f_A][c_A]<<endl<<"B: "<<B[f_B][c_B]<<endl<<endl;
-
     if ((A[f_A][c_A] > B[f_B][c_B]) && norma == MAYOR)
-    {
-        cout<<endl<<norma<<endl<<"A: "<<A[f_A][c_A]<<endl<<"B: "<<B[f_B][c_B]<<endl<<endl;
         return true;
-    }
 
     if ((A[f_A][c_A] < B[f_B][c_B]) && norma == MENOR)
-    {
-        cout<<endl<<norma<<endl<<"A: "<<A[f_A][c_A]<<endl<<"B: "<<B[f_B][c_B]<<endl<<endl;
         return true;
-    }
 
     if ((A[f_A][c_A] == B[f_B][c_B]) && norma == IGUAL)
-    {
-        cout<<endl<<norma<<endl<<"A: "<<A[f_A][c_A]<<endl<<"B: "<<B[f_B][c_B]<<endl<<endl;
         return true;
-    }
-
-
 
     return false;
 }
