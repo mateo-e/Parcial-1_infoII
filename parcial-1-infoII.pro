@@ -7,6 +7,7 @@ SOURCES += \
         CompararMatrices.cpp \
         CrearEstructura.cpp \
         RotarEstructura.cpp \
+        Validacion.cpp \
         crearCerradura.cpp \
         main.cpp \
         mostrarMatriz.cpp \
