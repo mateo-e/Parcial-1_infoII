@@ -21,6 +21,7 @@ void validar(short int *** cerradura, short int tam_cerradura, short int * key, 
     {
         mostrarMatriz(A,tam_A);
         cout<<endl;
+
         mostrarMatriz(B,tam_B);
         cout<<endl;
 

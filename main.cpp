@@ -1,18 +1,15 @@
 #include <iostream>
 #include "crearCerradura.cpp"
+#include "Validacion.cpp"
 
 using namespace std;
 
 int main()
 {
 
-    // ingresar key
-    short int key[] = {4,3,1,1,1,1,-1,1,1,-1,-1,0,1,1,-1,0};
+    short int tam_key, *key = crear_key(tam_key);
 
-    // validar key
-
-    short int tam_key = sizeof key / 2;
-
+    tam_key += 2; // se agregan las posiciones de las coordenadas
 
     //creacion de cerradura
     short int ***cerradura = new short int **[tam_key-1], *tam_matrices = new short int [tam_key - 1];
